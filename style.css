@@ -1,0 +1,343 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    background-image: url(./fon-image.jpg);
+    background-repeat: no-repeat;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+    color: rgb(255, 160, 17);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 0;
+    color: azure;
+    background: rgba(236, 25, 25, 0.5);
+    border-radius: 10px;
+  }
+  h2 {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 0;
+    color: azure;
+  }
+
+  
+  .hole.up .mole {
+    top: -100px;
+  }
+  
+  .no-loaded {
+      display: none;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .start-bot {
+    margin: 0 auto;
+    max-width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+input[type="text"] {
+    padding: 4px 6px;
+    z-index: 1;
+}
+input[type="text"]:focus {
+    box-shadow: 0 0 20px rgba(236, 25, 25, 0.5);
+    z-index: 1;
+}
+input[type=text] {
+    border:none;
+    text-align: center;
+    color: azure;
+    padding: 15px;
+    font-size: 5rem;
+    min-width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.4);
+    outline:none;
+    font-family: 'Amatic SC', cursive;
+    z-index: 1;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    color: azure;
+    font-size: 5rem;
+    line-height: 1;
+    max-height: 60px;
+}
+
+p {
+    padding: 5px 30px 5px 30px;
+}
+
+:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+} /* Убрать обводку у кнопок после нажатия */
+
+.start,
+.load-game {
+  z-index: 1;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.content-text button {
+    border: none;
+    background: rgba(255, 55, 55, 0.4);
+    color: azure;
+    font-size: 3rem;
+    max-height: 70px;
+    cursor: pointer;
+    padding: 0px 30px 0px 30px;
+    margin: 50px 30px 0px 30px;
+    border-radius: 10px;
+    font-family: 'Amatic SC', cursive;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.start button {
+    border: none;
+    background: rgba(255, 55, 55, 0.4);
+    color: azure;
+    font-size: 3rem;
+    max-height: 70px;
+    cursor: pointer;
+    padding: 0px 30px 0px 30px;
+    margin: 50px 30px 0px 30px;
+    border-radius: 10px;
+    font-family: 'Amatic SC', cursive;
+    z-index: 1;
+    transition: 0.5s;
+}
+.start-b button {
+  background: transparent;
+  border: none;
+  max-height: 70px;
+  cursor: pointer;
+  padding: 0px 30px 0px 30px;
+  margin: 50px 30px 0px 30px;
+  border-radius: 10px;
+  font-family: 'Amatic SC', cursive;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.load-game button {
+    border: none;
+    background: rgba(255, 55, 55, 0.4);
+    color: azure;
+    font-size: 3rem;
+    max-height: 70px;
+    cursor: pointer;
+    padding: 0px 30px 0px 30px;
+    margin: 50px 30px 0px 30px;
+    border-radius: 10px;
+    font-family: 'Amatic SC', cursive;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.authorization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.registration {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newUser {
+  display: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+.img-box {
+  flex: 1;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 1s;
+  filter: grayscale(0.9);
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 15px 30px 6px rgba(34, 60, 80, 0.8) inset;
+  -moz-box-shadow: 10px 15px 30px 6px rgba(34, 60, 80, 0.8) inset;
+  box-shadow: 10px 15px 30px 6px rgba(34, 60, 80, 0.8) inset;
+}
+
+.img-box:hover {
+	flex-grow: 3;
+	filter: grayscale(0) contrast(120%);
+  opacity: 1;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.container-images {
+  margin-top: 40px;
+	width: 100%;
+	height: 500px;
+	display: flex;
+  overflow: hidden;
+}
+
+.bor-top-bottom::before,
+.bor-top-bottom::after {
+	content: '';
+	position: absolute;
+	background-color: #ffffff;
+	opacity: .3;
+	transition: 1s;
+}
+
+.img-box:hover .bor-top-bottom::before,
+.img-box:hover .bor-top-bottom::after {
+	transition: 1s;
+	opacity: .7;
+	transition-delay: 0.3s;
+}
+
+.img-box:hover .bor-top-bottom::before {
+	transform: translateX(100%) scaleX(-2);
+}
+.img-box:hover .bor-top-bottom::after {
+	transform: translateX(-100%) scaleX(-2);
+}
+
+.bor-top-bottom::before {
+	width: 100%;
+	height: 2px;
+	top: 10px;
+	left: 0;
+}
+.bor-top-bottom::after {
+	width: 100%;
+	height: 2px;
+	bottom: 10px;
+	left: 0;
+}
+
+.content-title {
+	color: #ffffff;
+	opacity: .9;
+	font-family: Roboto,sans-serif;
+	font-size: 24px;
+	width: 45%;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	padding: 15px;
+	box-sizing: border-box;
+	-webkit-transform: translateY(-120%);
+	-moz-transform: translateY(-120%);
+	-ms-transform: translateY(-120%);
+	-o-transform: translateY(-120%);
+	transform: translateY(-120%);
+	transition: 0.5s;
+}
+
+.content-text {
+	color: #ffffff;
+	opacity: .9;
+	font-family: Roboto,sans-serif;
+	font-size: 14px;
+  width: 45%;
+  height: 90%;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 15px;
+	box-sizing: border-box;
+	-webkit-transform: translateY(120%);
+	-moz-transform: translateY(120%);
+	-ms-transform: translateY(120%);
+	-o-transform: translateY(120%);
+	transform: translateY(120%);
+	transition: 0.5s;
+}
+
+.content-text a {
+  color: #ffffff;
+  font-family: Roboto,sans-serif;
+	font-size: 24px;
+  text-align: justify ;
+  text-decoration: none;
+}
+
+.content-text p {
+  color: #ffffff;
+  font-family: Roboto,sans-serif;
+	font-size: 16px;
+  text-decoration: none;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.img-box:hover .content-title {
+	transform: translateY(0);
+	transition-delay: 1s;
+}
+
+.img-box:hover .content-text {
+	transform: translateY(0);
+	transition-delay: 1s;
+}
+
+.panel1 { background-image:url(img/Tania.jpg); }
+.panel2 { background-image:url(img/Alex.jpg); }
+.panel3 { background-image:url(img/Andrei.jpg); }
+.panel4 { background-image:url(img/Ivan.jpg); }
+.panel5 { background-image:url(img/blenda.png); }
+.panel6 { background-image:url(img/dejavu.png); }
+.panel7 { background-image:url(img/diva.png); }
+
+a img {
+  max-width: 50px;
+}
+
+.content-title img {
+  width: 100%;
+  border-radius: 50%;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your gift!</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="load-game1">
+        <div class="authorization">
+            <div class="container">
+                <h1>Привет! Как тебя зовут?</h1>
+                <div class="registration">
+                    <input id="yourName" type="text" name="name" size="20" maxlength="20">
+                </div>
+                <div class="start">
+                    <button onClick="startGo()">Подтвердить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="load-game2 no-loaded">
+        <div class="authorization">
+            <div class="container">
+                <h1>Ого! А у меня кое-что для тебя есть!</h1>
+                <h1>Открой подарок :)</h1>
+                <div class="start-b">
+                    <button onClick="startGo2()"><img src="./present1.png" alt="Present"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="load-game3 no-loaded">
+        <div class="authorization">
+            <div class="container">
+                <h1>До Санты дошли слухи, что ты очень хотела себе новогодние фотографии.. Он попробовал воплотить твоё желание в реальность!</h1>
+                <h1>Ниже приведены одни из самых лучших фотографов Беларуси! С каждым из них всё оговорено. Тебе остаётся сделать лишь свой выбор :)</h1>
+                <section class="container-images">
+                    <div class="img-box panel1">
+                        <span class="bor-top-bottom"></span>
+                        <div class="content-title">
+                            <img src="./img/Tatiana-prof.png" alt="photo">
+                            <h2>Татьяна Семёнова</h2>
+                        </div>
+                        <div class="content-text">
+                            <h3>Фотограф - художник</h3>
+                            <h3>Профессионал своего дела, помогает в позировании и создаёт необыкновенные сказочные фотографии.</h3>
+                            <a target="_blank" href="https://www.instagram.com/t.semionova_photo"><img src="./inst.png" alt="inst"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="img-box panel2">
+                        <span class="bor-top-bottom"></span>
+                        <div class="content-title">
+                            <img src="./img/Alex-prof.png" alt="photo">
+                            <h2>Александр Худницкий</h2>
+                        </div>
+                        <div class="content-text">
+                            <h3>Фотограф</h3>
+                            <h3>Очень крутой и современный фотограф. Никому не даёт потрогать свой фотоаппарат.</h3>
+                            <a target="_blank" href="https://www.instagram.com/khudnitskiphotography"><img src="./inst.png" alt="inst"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="img-box panel3">
+                        <span class="bor-top-bottom"></span>
+                        <div class="content-title">
+                            <img src="./img/Andrei-prof.png" alt="photo">
+                            <h2>Андрей Сашко</h2>
+                        </div>
+                        <div class="content-text">
+                            <h3>Фотограф</h3>
+                            <h3>Очень много лет профессионально занимается фотографией, очень общительный и добрый.</h3>
+                            <a target="_blank" href="https://www.instagram.com/sashko.photo"><img src="./inst.png" alt="inst"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="img-box panel4">
+                        <span class="bor-top-bottom"></span>
+                        <div class="content-title">
+                            <img src="./img/Ivan-prof.png" alt="photo">
+                            <h2>Иван Иваньшин</h2>
+                        </div>
+                        <div class="content-text">
+                            <h3>Фотограф - видеограф</h3>
+                            <h3>Создаёт крутые фотографии и в перерывах снимает бэкстейджи.</h3>
+                            <a target="_blank" href="https://www.instagram.com/ivan_ivanshin"><img src="./inst.png" alt="inst"></a>
+                            
+                        </div>
+                    </div>
+                </section>
+                <div class="start">
+                    <button onClick="startGo3()">Выбрать студию</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="load-game4 no-loaded">
+        <div class="authorization">
+            <div class="container">
+                <h1>Ой! Кажется тебя нет в списке санты :(</h1>
+                <div class="start">
+                    <button onClick="endGame()">Вернуться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="load-game5 no-loaded">
+        <div class="authorization">
+            <div class="container">
+                <h1>Отлично! Теперь давай определимся со студией :)</h1>
+                <section class="container-images">
+                    <div class="img-box panel5">
+                        <span class="bor-top-bottom"></span>
+                        <div class="content-title">
+                            <img src="https://instagram.fmsq2-1.fna.fbcdn.net/v/t51.2885-19/s150x150/128403958_1276784339350390_7998344761103118043_n.jpg?_nc_ht=instagram.fmsq2-1.fna.fbcdn.net&_nc_ohc=3zZL6mOjeM4AX85gk3M&tp=1&oh=bd4ae2954babe301802eda12e85c0662&oe=60181BFF" alt="photo">
+                            <h2>Студия Blenda</h2>
+                        </div>
+                        <div class="content-text">
+                            <h3>Лучшая фотошкола Минска</h3>
+                            <h3>пр. Машерова, 11.</h3>
+                            <a target="_blank" href="https://www.instagram.com/blenda_photostudio"><img src="./inst.png" alt="inst"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="img-box panel6">
+                        <span class="bor-top-bottom"></span>
+                        <div class="content-title">
+                            <img src="https://instagram.fmsq2-1.fna.fbcdn.net/v/t51.2885-19/s150x150/74611105_1389249797910299_3797703541611560960_n.jpg?_nc_ht=instagram.fmsq2-1.fna.fbcdn.net&_nc_ohc=YhFPF7EUh9YAX9N8jGP&tp=1&oh=01b9d9b969bfb67e12840f7b11f86a80&oe=601801A2" alt="photo">
+                            <h2>Студия Дежавю</h2>
+                        </div>
+                        <div class="content-text">
+                            <h3>Атмосферная фотостудия - дом с шестью локациями и котиком</h3>
+                            <h3>Тарасово, Луговая 56.</h3>
+                            <a target="_blank" href="https://www.instagram.com/dejavu_studio.minsk"><img src="./inst.png" alt="inst"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="img-box panel7">
+                        <span class="bor-top-bottom"></span>
+                        <div class="content-title">
+                            <img src="https://instagram.fmsq2-1.fna.fbcdn.net/v/t51.2885-19/s150x150/133964038_220982442930700_5343623356932360290_n.jpg?_nc_ht=instagram.fmsq2-1.fna.fbcdn.net&_nc_ohc=Wj1O6aTwzGkAX-U_Jqq&tp=1&oh=126aa0166b27421dab22f72e6eda7bb0&oe=60177ABF" alt="photo">
+                            <h2>Дива студия</h2>
+                        </div>
+                        <div class="content-text">
+                            <h3>Крутая фотостудия</h3>
+                            <h3>ул. Октябрьская, 10Б.</h3>
+                            <a target="_blank" href="https://www.instagram.com/divafotostudio"><img src="./inst.png" alt="inst"></a>
+                            
+                        </div>
+                    </div>
+                </section>
+                <div class="start">
+                    <button onClick="startGo4()">Я сделала выбор!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="load-game6 no-loaded">
+        <div class="authorization">
+            <div class="container">
+                <h1>Как только ты выбрала фотографа и студию - позвони своему Санте!</h1>
+                <h1>Пора назначить время и место :)</h1>
+                <h1>С Новым Годом, дорогая Маринка!</h1>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
